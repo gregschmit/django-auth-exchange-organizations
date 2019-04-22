@@ -38,6 +38,7 @@ SECRET_KEY = 'not-a-very-good-secret'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
+    'organizations',
     'django_auth_exchange',
     'django_auth_exchange_organizations',
     'django.contrib.admin',
