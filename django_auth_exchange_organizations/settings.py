@@ -38,7 +38,8 @@ SECRET_KEY = 'not-a-very-good-secret'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
-    'auth_exchange',
+    'django_auth_exchange',
+    'django_auth_exchange_organizations',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +56,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-ROOT_URLCONF = 'auth_exchange.urls'
+ROOT_URLCONF = 'django_auth_exchange_organizations.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -71,7 +72,7 @@ TEMPLATES = [
         },
     },
 ]
-WSGI_APPLICATION = 'auth_exchange.wsgi.application'
+WSGI_APPLICATION = 'django_auth_exchange_organizations.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
