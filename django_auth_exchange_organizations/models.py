@@ -14,10 +14,6 @@ class DomainOrganization(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
-    class Meta:
-        verbose_name = 'Domain Organization'
-        verbose_name_plural = 'Domain Organizations'
-
     @classmethod
     def associate_new_user(cls, user, domain):
         """
